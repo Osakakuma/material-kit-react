@@ -23,7 +23,7 @@ const SettingsPassword = (props:any) => {
   };
 
   return (
-    <form {...props}>
+    <form>
       <Card>
         <CardHeader
           subheader="Update password"

@@ -20,7 +20,7 @@ const user = {
 };
 
 const AccountProfile = (props:any) => (
-  <Card {...props}>
+  <Card>
     <CardContent>
       <Box
         sx={{

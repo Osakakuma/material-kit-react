@@ -49,7 +49,7 @@ const products = [
 ];
 
 const LatestProducts = (props:any) => (
-  <Card {...props}>
+  <Card>
     <CardHeader
       subtitle={`${products.length} in total`}
       title="Latest Products"

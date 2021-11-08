@@ -82,7 +82,7 @@ const orders = [
 ];
 
 const LatestOrders = (props:any) => (
-  <Card {...props}>
+  <Card>
     <CardHeader title="Latest Orders" />
     <Divider />
     <PerfectScrollbar>

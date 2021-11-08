@@ -10,7 +10,7 @@ import {
 import { Search as SearchIcon } from 'react-feather';
 
 const ProductListToolbar = (props:any) => (
-  <Box {...props}>
+  <Box>
     <Box
       sx={{
         display: 'flex',

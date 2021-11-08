@@ -33,7 +33,7 @@ const TrafficByDevice = (props:any) => {
     labels: ['Desktop', 'Tablet', 'Mobile']
   };
 
-  const options = {
+  const options:any = {
     animation: false,
     cutoutPercentage: 80,
     layout: { padding: 0 },
@@ -77,7 +77,7 @@ const TrafficByDevice = (props:any) => {
   ];
 
   return (
-    <Card {...props}>
+    <Card>
       <CardHeader title="Traffic by Device" />
       <Divider />
       <CardContent>
@@ -87,10 +87,10 @@ const TrafficByDevice = (props:any) => {
             position: 'relative'
           }}
         >
-          {/* <Doughnut
+          <Doughnut
             data={data}
             options={options}
-          /> */}
+          />
         </Box>
         <Box
           sx={{

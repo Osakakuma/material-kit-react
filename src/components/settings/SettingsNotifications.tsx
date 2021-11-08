@@ -12,7 +12,7 @@ import {
 } from '@material-ui/core';
 
 const SettingsNotifications = (props:any) => (
-  <form {...props}>
+  <form>
     <Card>
       <CardHeader
         subheader="Manage the notifications"

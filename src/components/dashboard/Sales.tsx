@@ -1,4 +1,5 @@
 import { Bar } from 'react-chartjs-2';
+import type { ChartProps } from 'react-chartjs-2';
 import {
   Box,
   Button,
@@ -12,7 +13,11 @@ import {
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-const Sales = (props:any) => {
+interface IProps {
+
+}
+
+const Sales = (props: IProps) => {
   const theme = useTheme();
 
   const data = {
@@ -41,7 +46,7 @@ const Sales = (props:any) => {
     labels: ['1 Aug', '2 Aug', '3 Aug', '4 Aug', '5 Aug', '6 Aug']
   };
 
-  const options = {
+  const options: any = {
     animation: false,
     cornerRadius: 20,
     layout: { padding: 0 },
@@ -93,17 +98,13 @@ const Sales = (props:any) => {
   };
 
   return (
-    <Card {...props}>
+    <Card>
       <CardHeader
-        action={(
-          <Button
-            endIcon={<ArrowDropDownIcon />}
-            size="small"
-            variant="text"
-          >
+        action={
+          <Button endIcon={<ArrowDropDownIcon />} size="small" variant="text">
             Last 7 days
           </Button>
-        )}
+        }
         title="Latest Sales"
       />
       <Divider />
@@ -114,10 +115,7 @@ const Sales = (props:any) => {
             position: 'relative'
           }}
         >
-          {/* <Bar
-            data={data}
-            options={options as any}
-          /> */}
+          <Bar data={data} options={options} />
         </Box>
       </CardContent>
       <Divider />

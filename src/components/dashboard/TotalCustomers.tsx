@@ -11,7 +11,7 @@ import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import PeopleIcon from '@material-ui/icons/PeopleOutlined';
 
 const TotalCustomers = (props:any) => (
-  <Card {...props}>
+  <Card>
     <CardContent>
       <Grid
         container
