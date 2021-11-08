@@ -13,7 +13,7 @@ import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import PhoneIcon from '@material-ui/icons/Phone';
 import TabletIcon from '@material-ui/icons/Tablet';
 
-const TrafficByDevice = (props) => {
+const TrafficByDevice = (props:any) => {
   const theme = useTheme();
 
   const data = {

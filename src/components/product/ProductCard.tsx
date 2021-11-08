@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import {
   Avatar,
   Box,
@@ -98,9 +97,5 @@ const ProductCard = ({ product, ...rest }) => (
     </Box>
   </Card>
 );
-
-ProductCard.propTypes = {
-  product: PropTypes.object.isRequired
-};
 
 export default ProductCard;

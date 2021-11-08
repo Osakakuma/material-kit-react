@@ -9,13 +9,13 @@ import {
   TextField
 } from '@material-ui/core';
 
-const SettingsPassword = (props) => {
+const SettingsPassword = (props:any) => {
   const [values, setValues] = useState({
     password: '',
     confirm: ''
   });
 
-  const handleChange = (event) => {
+  const handleChange = (event:any) => {
     setValues({
       ...values,
       [event.target.name]: event.target.value

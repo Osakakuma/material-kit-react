@@ -1,4 +1,4 @@
-const Logo = (props) => (
+const Logo = (props:any) => (
   <img
     alt="Logo"
     src="/static/logo.svg"

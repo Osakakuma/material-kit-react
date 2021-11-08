@@ -25,7 +25,7 @@ const states = [
   }
 ];
 
-const AccountProfileDetails = (props) => {
+const AccountProfileDetails = (props:any) => {
   const [values, setValues] = useState({
     firstName: 'Katarina',
     lastName: 'Smith',
@@ -35,7 +35,7 @@ const AccountProfileDetails = (props) => {
     country: 'USA'
   });
 
-  const handleChange = (event) => {
+  const handleChange = (event:any) => {
     setValues({
       ...values,
       [event.target.name]: event.target.value

@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import {
   Avatar,
   Box,
@@ -211,10 +210,6 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
   );
 };
 
-DashboardSidebar.propTypes = {
-  onMobileClose: PropTypes.func,
-  openMobile: PropTypes.bool
-};
 
 DashboardSidebar.defaultProps = {
   onMobileClose: () => {

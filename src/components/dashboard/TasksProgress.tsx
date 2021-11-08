@@ -1,15 +1,20 @@
 import {
   Avatar,
+  Box,
   Card,
   CardContent,
   Grid,
+  LinearProgress,
   Typography
 } from '@material-ui/core';
-import { indigo } from '@material-ui/core/colors';
-import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
+import { orange } from '@material-ui/core/colors';
+import InsertChartIcon from '@material-ui/icons/InsertChartOutlined';
 
-const TotalProfit = (props) => (
-  <Card {...props}>
+const TasksProgress = (props:any) => (
+  <Card
+    sx={{ height: '100%' }}
+    {...props}
+  >
     <CardContent>
       <Grid
         container
@@ -22,29 +27,35 @@ const TotalProfit = (props) => (
             gutterBottom
             variant="h6"
           >
-            TOTAL PROFIT
+            TASKS PROGRESS
           </Typography>
           <Typography
             color="textPrimary"
             variant="h3"
           >
-            $23,200
+            75.5%
           </Typography>
         </Grid>
         <Grid item>
           <Avatar
             sx={{
-              backgroundColor: indigo[600],
+              backgroundColor: orange[600],
               height: 56,
               width: 56
             }}
           >
-            <AttachMoneyIcon />
+            <InsertChartIcon />
           </Avatar>
         </Grid>
       </Grid>
+      <Box sx={{ pt: 3 }}>
+        <LinearProgress
+          value={75.5}
+          variant="determinate"
+        />
+      </Box>
     </CardContent>
   </Card>
 );
 
-export default TotalProfit;
+export default TasksProgress;

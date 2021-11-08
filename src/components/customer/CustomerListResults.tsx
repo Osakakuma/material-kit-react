@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import moment from 'moment';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import {
@@ -22,7 +21,7 @@ const CustomerListResults = ({ customers, ...rest }) => {
   const [limit, setLimit] = useState(10);
   const [page, setPage] = useState(0);
 
-  const handleSelectAll = (event) => {
+  const handleSelectAll = (event:any) => {
     let newSelectedCustomerIds;
 
     if (event.target.checked) {
@@ -54,7 +53,7 @@ const CustomerListResults = ({ customers, ...rest }) => {
     setSelectedCustomerIds(newSelectedCustomerIds);
   };
 
-  const handleLimitChange = (event) => {
+  const handleLimitChange = (event:any) => {
     setLimit(event.target.value);
   };
 
@@ -107,7 +106,7 @@ const CustomerListResults = ({ customers, ...rest }) => {
                   <TableCell padding="checkbox">
                     <Checkbox
                       checked={selectedCustomerIds.indexOf(customer.id) !== -1}
-                      onChange={(event) => handleSelectOne(event, customer.id)}
+                      onChange={(event:any) => handleSelectOne(event, customer.id)}
                       value="true"
                     />
                   </TableCell>
@@ -161,10 +160,6 @@ const CustomerListResults = ({ customers, ...rest }) => {
       />
     </Card>
   );
-};
-
-CustomerListResults.propTypes = {
-  customers: PropTypes.array.isRequired
 };
 
 export default CustomerListResults;

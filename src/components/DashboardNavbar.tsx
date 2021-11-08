@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import {
   AppBar,
   Badge,
@@ -51,8 +50,5 @@ const DashboardNavbar = ({ onMobileNavOpen, ...rest }) => {
   );
 };
 
-DashboardNavbar.propTypes = {
-  onMobileNavOpen: PropTypes.func
-};
 
 export default DashboardNavbar;

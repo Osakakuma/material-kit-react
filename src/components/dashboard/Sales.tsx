@@ -12,7 +12,7 @@ import {
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-const Sales = (props) => {
+const Sales = (props:any) => {
   const theme = useTheme();
 
   const data = {

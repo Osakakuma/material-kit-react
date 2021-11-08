@@ -48,7 +48,7 @@ const products = [
   }
 ];
 
-const LatestProducts = (props) => (
+const LatestProducts = (props:any) => (
   <Card {...props}>
     <CardHeader
       subtitle={`${products.length} in total`}

@@ -81,7 +81,7 @@ const orders = [
   }
 ];
 
-const LatestOrders = (props) => (
+const LatestOrders = (props:any) => (
   <Card {...props}>
     <CardHeader title="Latest Orders" />
     <Divider />
