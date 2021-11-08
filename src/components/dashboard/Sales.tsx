@@ -114,10 +114,10 @@ const Sales = (props:any) => {
             position: 'relative'
           }}
         >
-          <Bar
+          {/* <Bar
             data={data}
-            options={options}
-          />
+            options={options as any}
+          /> */}
         </Box>
       </CardContent>
       <Divider />

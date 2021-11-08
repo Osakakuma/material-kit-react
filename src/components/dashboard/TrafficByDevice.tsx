@@ -87,10 +87,10 @@ const TrafficByDevice = (props:any) => {
             position: 'relative'
           }}
         >
-          <Doughnut
+          {/* <Doughnut
             data={data}
             options={options}
-          />
+          /> */}
         </Box>
         <Box
           sx={{
