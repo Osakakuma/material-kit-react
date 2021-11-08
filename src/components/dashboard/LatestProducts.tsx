@@ -48,8 +48,12 @@ const products = [
   }
 ];
 
-const LatestProducts = (props:any) => (
-  <Card>
+interface IProps {
+    sx:any;
+}
+
+const LatestProducts = (props:IProps) => (
+  <Card sx={props.sx}>
     <CardHeader
       subtitle={`${products.length} in total`}
       title="Latest Products"

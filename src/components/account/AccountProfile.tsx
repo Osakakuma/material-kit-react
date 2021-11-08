@@ -19,7 +19,7 @@ const user = {
   timezone: 'GTM-7'
 };
 
-const AccountProfile = (props:any) => (
+const AccountProfile = () => (
   <Card>
     <CardContent>
       <Box

@@ -8,8 +8,12 @@ import {
 import { indigo } from '@material-ui/core/colors';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 
-const TotalProfit = (props:any) => (
-  <Card>
+interface IProps {
+    sx: object
+}
+
+const TotalProfit = (props: IProps) => (
+  <Card sx={props.sx}>
     <CardContent>
       <Grid
         container

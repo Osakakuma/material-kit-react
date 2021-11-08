@@ -13,7 +13,11 @@ import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import PhoneIcon from '@material-ui/icons/Phone';
 import TabletIcon from '@material-ui/icons/Tablet';
 
-const TrafficByDevice = (props:any) => {
+interface IProps {
+    sx: any;
+}
+
+const TrafficByDevice = (props:IProps) => {
   const theme = useTheme();
 
   const data = {
@@ -77,7 +81,7 @@ const TrafficByDevice = (props:any) => {
   ];
 
   return (
-    <Card>
+    <Card sx={props.sx}>
       <CardHeader title="Traffic by Device" />
       <Divider />
       <CardContent>

@@ -9,7 +9,7 @@ import {
 } from '@material-ui/core';
 import { Search as SearchIcon } from 'react-feather';
 
-const CustomerListToolbar = (props:any) => (
+const CustomerListToolbar = () => (
   <Box>
     <Box
       sx={{

@@ -25,7 +25,7 @@ const states = [
   }
 ];
 
-const AccountProfileDetails = (props:any) => {
+const AccountProfileDetails = () => {
   const [values, setValues] = useState({
     firstName: 'Katarina',
     lastName: 'Smith',

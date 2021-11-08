@@ -9,8 +9,7 @@ import {
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import MoneyIcon from '@material-ui/icons/Money';
 import { red } from '@material-ui/core/colors';
-
-const Budget = (props: any) => (
+const Budget = () => (
   <Card sx={{ height: '100%' }}>
     <CardContent>
       <Grid container spacing={3} sx={{ justifyContent: 'space-between' }}>
